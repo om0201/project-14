@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --color-grey: #a3a3a3;
+  --color-grey: #7c7c7c;
+  --bg-color: #3d3d3d;
 }
 
 body {
@@ -83,6 +84,8 @@ body {
 .section-1 {
   display: flex;
   margin: 2rem;
+  margin-right: 0;
+  margin-bottom: 1rem;
 }
 
 .s1-creativity-container {
@@ -101,4 +104,76 @@ body {
 
 .s1-text {
   margin: 2rem;
+  color: var(--color-grey);
+  font-size: 1.5rem;
+}
+
+.social-links-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.link-svg {
+  width: 60%;
+}
+
+.hero-btn-section {
+  margin: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero-btn {
+  color: white;
+  background-color: var(--bg-color);
+  font-weight: 600;
+  font-size: 1.125rem;
+  padding: 1rem 2rem;
+  border: none;
+}
+
+.section-2 {
+  margin: 2rem;
+  display: flex;
+}
+
+.s2-features-list {
+  flex-basis: 30%;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.list-feature {
+  position: relative;
+  bottom: 5px;
+}
+
+/* .list-feature {
+  position: relative;
+  bottom: 5px;
+}
+
+.list-feature:first-of-type {
+  position: relative;
+  top: 5px;
+}
+
+.list-feature:not(.lf-1) {
+  color: red;
+} */
+
+.list-feature:first-of-type::before {
+  content: url(assets/top_point.svg);
+}
+
+.list-feature::before {
+  content: url(assets/point.svg);
+  position: relative;
+  height: 100%;
 }
