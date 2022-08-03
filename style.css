@@ -199,3 +199,25 @@ body {
 .lf-1 {
   color: var(--bg-color);
 }
+
+.s2-banner-container {
+  flex-basis: 50%;
+}
+
+.quotes-svg {
+  width: 10%;
+}
+
+.banner-tagline {
+  font-weight: 600;
+}
+
+.banner-img {
+  width: 100%;
+}
+
+.arrow {
+  position: relative;
+  top: 130px;
+  left: 140px;
+}
